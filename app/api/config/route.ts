@@ -1,0 +1,1 @@
+export function GET(){return Response.json({mapsKey:process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY||"",ai:!!process.env.OPENAI_API_KEY,database:!!process.env.DATABASE_URL},{headers:{"Cache-Control":"no-store"}});}
